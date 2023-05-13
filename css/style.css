@@ -1,0 +1,164 @@
+
+body {
+  margin: 0;
+  font-family: "Ubuntu";
+}
+h3 {
+  font-family: "oswald";
+}
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+li {
+  color: #2e65db;
+}
+.container {
+ display:grid;
+ flex-direction: row;
+ flex-wrap:wrap-reverse;
+ justify-content: space-around;
+ grid-template-columns:2fr 8fr;
+ grid-template-rows:1fr 9fr;
+ gap: 1rem; 
+}
+
+
+.header {
+  display:flex;
+  background-color: #fae8da;
+  padding:10px;
+  grid-column:span 2;
+  justify-content:space-between;
+   border: 2px solid red;
+}
+.header ul {
+  display:flex;
+ text-align: center;
+}
+
+.header ul li {
+  margin:  10px;
+  cursor: pointer;
+  font-family: "roboto";
+  
+}
+.header ul li:hover {
+  margin: 0 10px;
+  color: #ff6600;
+}
+.header h3 {
+  margin: 10px;
+  color: #ff6600;
+}
+.left-block {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: rgb(193, 244, 227);
+   border: 2px solid rgb(239, 19, 19);
+}
+.left-block ul {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  gap: 1rem;
+
+  }
+.left-block ul li {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.left-block ul li:hover {
+  color: #ff6600;
+  
+}
+.main {
+display: flex;
+  border: 2px solid rgb(249, 24, 24);
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #dce4f8;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.footer {
+  justify-content: center;
+  background-color: #100e0e;
+  color: #fff;
+ display: flex;
+ grid-column: span 2;
+ border: 2px solid red;
+}
+.footer span {
+  color: #ff6600;
+  justify-content: center;
+
+
+}
+.plan-button {
+  padding: 10px;
+  background-color: #7c8116;
+  color: #f48888;
+  border-radius: 5px;
+  border:none;
+}
+
+.pricing-container {
+ flex-wrap:wrap;
+  display: flex;
+  gap: 10px;
+}
+
+.pricing-plan {
+ padding: 20px;
+  background-color: #a6a0a0;
+  border-radius: 20px;
+  text-align:center;
+}
+
+.plan-title {
+  font-size: 30px;
+  font-weight:bold;
+  margin-bottom: 10px;
+  text-align:center;
+}
+
+.plan-price {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-features {
+  list-style:armenian;
+  padding: 0%;
+  margin: 0%;
+}
+
+.plan-features li {
+  margin-bottom: 5px;
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 900px){
+  .container {
+  display: flex;
+  flex-direction: column;}
+
+  .left-block ul {
+    
+    flex-direction: row;
+   
+  }
+  
+  .pricing-container {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+  }
+}
